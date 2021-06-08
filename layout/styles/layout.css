@@ -54,10 +54,10 @@ File: Layout CSS
 
 /* Page Intro
 --------------------------------------------------------------------------------------------------------------- */
-#pageintro{padding:200px 0 400px;}/* 400px => 200px for #introblocks negative margin */
+#pageintro{padding:10px 0 70px;}/* 400px => 200px for #introblocks negative margin */
 
 #pageintro article, #pageintro article p{display:block; max-width:75%; margin:0 auto; text-align:center;}
-#pageintro article p{max-width:65%; line-height:2rem;}
+#pageintro article p{max-width:75%; line-height:2rem;}
 #pageintro .heading{margin-bottom:20px; font-size:4rem;}
 #pageintro footer{margin-top:50px;}
 
@@ -69,87 +69,9 @@ File: Layout CSS
 /* Content */
 .container .content{}
 
-.sectiontitle{display:block; max-width:55%; margin:0 auto 80px; text-align:center;}
+.sectiontitle{display:block; max-width:50%; margin:0 auto 80px; text-align:center;}
 .sectiontitle *{margin:0;}
 
-/* Introblocks - x3 */
-#introblocks{display:block; position:relative; margin:-280px 0 0 0; z-index:1; text-align:center;}/* 280px => 200px + container padding */
-#introblocks figure{display:block; position:relative; max-width:348px; text-align:center;}
-#introblocks figure figcaption{display:block; position:absolute; bottom:0; width:100%; padding:0 20px;}
-#introblocks figure figcaption *{margin:0; padding:0;}
-#introblocks figure figcaption div{max-height:0; overflow:hidden; transition:max-height .6s cubic-bezier(0, 1, 0, 1) -.1s;}
-#introblocks figure:hover figcaption div{max-height:1200px; transition-timing-function:cubic-bezier(0.5, 0, 1, 0); transition-delay:0s;}
-#introblocks figure figcaption .heading{padding:20px 0; font-size:1.2rem; font-weight:700; line-height:1;}
-#introblocks figure figcaption div p{padding:0 0 20px 0;}
-
-/* Image Group */
-.imgroup{}
-.imgroup li{margin-bottom:50px;}
-.imgroup li:nth-last-child(-n+3){margin-bottom:0;}/* Removes bottom margin from the last three items - margin is restored in the media queries when items stack */
-.imgroup li:nth-child(3n+1){margin-left:0; clear:left;}/* Removes the need to add class="first" */
-
-/* Team Members */
-.team{}
-.team li:last-child{margin-bottom:0;}/* Used when elements stack in small viewports */
-.team figure{display:block; text-align:center;}
-.team figure *{margin:0; padding:0;}
-.team figure a{}
-.team figure img{}
-.team figure figcaption{padding:20px 10px; line-height:1;}
-.team figure strong{display:block; margin-bottom:8px; font-size:1.4rem; font-weight:400;}
-.team figure em{display:block; font-style:normal; font-size:.8rem;}
-
-/* Client Logos */
-.clients{text-align:center;}
-.clients li{margin-bottom:20px;}
-.clients li:nth-last-child(-n+4){margin-bottom:0;}/* Removes bottom margin from the last four items - margin is restored in the media queries when items stack */
-.clients li:nth-child(4n+1){margin-left:0; clear:left;}/* Removes the need to add class="first" */
-
-/* Testimonials */
-#testimonials{text-align:center;}
-#testimonials li:last-child{margin-bottom:0;}/* Used when elements stack in smaller viewports */
-#testimonials blockquote{max-width:80%; margin:0 auto 30px; padding:20px; line-height:2rem; font-size:1.2rem;}
-#testimonials blockquote::before{top:10px; left:10px;}
-#testimonials blockquote::after{display:block; position:absolute; bottom:-15px; left:50%; margin-left:-15px; width:0; height:0; content:""; border:15px solid transparent; border-bottom:none;}
-#testimonials figure{}
-#testimonials figure *{margin:0; line-height:1;}
-#testimonials figure img{margin:0 0 15px 0;}
-#testimonials figcaption .heading{font-size:1.2rem; font-weight:700;}
-#testimonials figcaption em{font-size:.8rem;}
-
-/* Latest - Blog posts etc. */
-#latest{}
-#latest > li:last-child{margin-bottom:0;}/* Used when elements stack in small viewports */
-#latest article{}
-#latest article figure{}
-#latest article figure img{}
-#latest article .meta{display:block; margin:0 0 30px 0; padding:5px 10px;}
-#latest article .meta li{display:block; float:left; width:50%; font-size:.8rem;}
-#latest article .meta li:last-child{text-align:right;}
-#latest article .meta li i{margin-right:5px;}
-#latest article .excerpt{position:relative; margin:0 0 30px 0; padding:0 0 0 65px;}
-#latest article .excerpt .heading{margin:0 0 15px 0; font-size:1.2rem;}
-#latest article .excerpt time{display:block; position:absolute; top:0; left:0; width:54px;}
-#latest article .excerpt time *{display:block; margin:0; padding:0; text-align:center; text-transform:uppercase; font-style:normal; line-height:1;}
-#latest article .excerpt time strong{padding:12px 0; font-size:18px; border-bottom:1px solid; opacity:.5;}
-#latest article .excerpt time em{padding:8px 0;}
-#latest article .excerpt p{margin:0; padding:0;}
-#latest article footer{text-align:right;}
-
-/* Comments */
-#comments ul{margin:0 0 40px 0; padding:0; list-style:none;}
-#comments li{margin:0 0 10px 0; padding:15px;}
-#comments .avatar{float:right; margin:0 0 10px 10px; padding:3px; border:1px solid;}
-#comments address{font-weight:bold;}
-#comments time{font-size:smaller;}
-#comments .comcont{display:block; margin:0; padding:0;}
-#comments .comcont p{margin:10px 5px 10px 0; padding:0;}
-
-#comments form{display:block; width:100%;}
-#comments input, #comments textarea{width:100%; padding:10px; border:1px solid;}
-#comments textarea{overflow:auto;}
-#comments div{margin-bottom:15px;}
-#comments input[type="submit"], #comments input[type="reset"]{display:inline-block; width:auto; min-width:150px; margin:0; padding:8px 5px; cursor:pointer;}
 
 /* Sidebar */
 .container .sidebar{}
@@ -158,15 +80,6 @@ File: Layout CSS
 .sidebar .sdb_holder:last-child{margin-bottom:0;}
 
 
-/* Contact Details
---------------------------------------------------------------------------------------------------------------- */
-#ctdetails{padding:50px 0;}
-#ctdetails ul{}
-#ctdetails ul li{}
-#ctdetails ul li div{position:relative; min-height:45px; padding:0 0 0 60px; line-height:1;}
-#ctdetails ul li div i{position:absolute; top:0; left:0; width:45px; height:45px; line-height:43px; font-size:16px; text-align:center; border:1px solid; border-radius:50%;}
-#ctdetails ul li div span{display:block; padding:4px 0 0 0;}
-#ctdetails ul li div strong{display:block; margin:0 0 8px 0; text-transform:capitalize;}
 
 
 /* Footer
@@ -307,28 +220,28 @@ td{border-width:0 1px;}
 
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
-body{color:#A5A6AA; background-color:#161C21;}
-a{color:#B946AD;}
+body{color:#A5A6AA; background-color:#94bbdb;}
+a{color:#FF0000;}
 a:active, a:focus{background:transparent !important;}/* IE10 + 11 Bugfix - prevents grey background */
 hr, .borderedbox{border-color:#D7D7D7;}
 label span{color:#FF0000; background-color:inherit;}
-input:focus, textarea:focus, *:required:focus{border-color:#B946AD !important;}
+input:focus, textarea:focus, *:required:focus{border-color:#FF0000 !important;}
 
 .overlay{color:#FFFFFF; background-color:inherit;}
 .overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
 .overlay.light{color:#474747;}
 .overlay.light::after{background-color:rgba(255,255,255,.7);}
 
-.coloured{color:#FFFFFF; background-color:#A032AB;}
+.coloured{color:#FFFFFF; background-color:#c50d0d;}
 .coloured .btn, .coloured .btn.inverse:hover{color:#FFFFFF; background-color:#161C21; border-color:#161C21;}
 
-.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#B946AD; border-color:#B946AD;}
+.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#FF0000; border-color:#FF0000;}
 .btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
 
 .imgover:hover::before{background-color:rgba(185,70,173,.5);/* #B946AD */}
 .imgover, .imgover:hover::after{color:#FFFFFF;}
 
-.heading.underline::after{background-color:#A032AB;}
+.heading.underline::after{background-color:#c50d0d;}
 
 
 /* Rows */
@@ -352,17 +265,17 @@ input:focus, textarea:focus, *:required:focus{border-color:#B946AD !important;}
 
 
 /* Page Intro */
-#pageintro{color:#FFFFFF;}
+#pageintro{color:#ffffff;}
 
 
 /* Content Area */
 #introblocks figure figcaption{color:#FFFFFF; background-color:rgba(0,0,0,.55);}
 
 .imgroup article a{color:inherit;}
-.imgroup article:hover a{color:#B946AD;}
+.imgroup article:hover a{color:#FF0000;}
 
 .team figure{box-shadow:0px 0px 15px rgba(0,0,0,.1);}
-.team figure:hover{color:#FFFFFF; background-color:#B946AD;}
+.team figure:hover{color:#FFFFFF; background-color:#FF0000;}
 
 #testimonials blockquote{color:#FFFFFF; background-color:rgba(255,255,255,.5);}
 #testimonials blockquote::before{color:rgba(0,0,0,.2);}
@@ -391,21 +304,21 @@ input:focus, textarea:focus, *:required:focus{border-color:#B946AD !important;}
 
 #footer input, #footer button{border-color:transparent;}
 #footer input{color:#474747; background-color:rgba(255,255,255,1);}
-#footer input:focus{border-color:#B946AD;}
-#footer button{color:#FFFFFF; background-color:#B946AD;}
+#footer input:focus{border-color:#FF0000;}
+#footer button{color:#FFFFFF; background-color:#FF0000;}
 #footer button:hover{color:inherit; background-color:transparent; border-color:inherit;}
 
 
 /* Navigation */
 #mainav{}
 #mainav li a{color:inherit;}
-#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#B946AD; background-color:inherit;}
-#mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(185,70,173,.5);/* #B946AD */ border-color:rgba(185,70,173,.5);}
-#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#B946AD;}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#FF0000; background-color:inherit;}
+#mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(228, 8, 45, 0.5);/* #B946AD */ border-color:rgba(185,70,173,.5);}
+#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#FF0000;}
 #mainav form select{color:#474747; background-color:#FFFFFF;}
 
 #breadcrumb a{color:inherit; background-color:inherit;}
-#breadcrumb li:last-child a{color:#B946AD;}
+#breadcrumb li:last-child a{color:##FF0000;}
 
 .container .sidebar nav a{color:inherit; border-color:#D7D7D7;}
 .container .sidebar nav a:hover{color:#B946AD;}
@@ -487,7 +400,7 @@ table a, #comments a{background-color:inherit;}
 	#header #logo{margin:0 0 15px 0;}
 
 	#pageintro article, #pageintro article p{max-width:none;}
-	#pageintro .heading{font-size:2rem;}
+	#pageintro .heading{font-size:4rem;}
 
 	.sectiontitle{max-width:none;}
 	
